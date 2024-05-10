@@ -1,10 +1,18 @@
+
+import {Routes, Route} from 'react-router-dom'
+
+import { Container  } from 'react-bootstrap'
+import Navbar from './components/NavBar'
+import Shop from './pages/Shop'
+
 function App(){
   return (
-  <div>
-    <h2>
-      Shopping Cart!
-    </h2>
-  </div>
+  <Container>
+    <Navbar></Navbar>
+    <Routes>
+      <Route path='/' element={<Shop />} />
+    </Routes>
+  </Container>
   )
 }
 
